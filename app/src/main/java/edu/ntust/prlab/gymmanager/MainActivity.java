@@ -25,6 +25,9 @@ import edu.ntust.prlab.gymmanager.schedule.TaskFirebaseUtils;
 import edu.ntust.prlab.gymmanager.ui.GYMRecyclerViewAdapter;
 import edu.ntust.prlab.gymmanager.utils.TimeParser;
 
+/**
+ * 用來顯示主頁面的Activity。
+ */
 public class MainActivity extends AppCompatActivity implements
         GYMRecyclerViewAdapter.OnDragListener,
         GYMRecyclerViewAdapter.OnItemCheckedListener,

@@ -1,5 +1,8 @@
 package edu.ntust.prlab.gymmanager.utils;
 
+/**
+ * 用來轉換時間型態的類別。
+ */
 public class TimeParser {
 
     private TimeParser() {

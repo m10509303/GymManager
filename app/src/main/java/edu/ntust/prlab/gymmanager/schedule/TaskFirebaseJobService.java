@@ -23,6 +23,10 @@ import com.firebase.jobdispatcher.JobService;
 
 import edu.ntust.prlab.gymmanager.utils.NotificationUtils;
 
+/**
+ * 主要是Firebase用來排定Job的類別，
+ * 這邊是繼承用來定義每天提醒事件觸發的時候所做的動作。
+ */
 public class TaskFirebaseJobService extends JobService {
 
     private AsyncTask<Void, Void, Void> fetchTaskRemindTask;

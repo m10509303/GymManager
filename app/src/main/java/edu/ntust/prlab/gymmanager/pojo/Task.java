@@ -22,40 +22,67 @@ public class Task {
      */
     private boolean isEnabled;
 
+    /**
+     * 建構子
+     */
     public Task() {
     }
 
+    /**
+     * 取得編號
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * 修改編號
+     */
     public Task setId(int id) {
         this.id = id;
         return this;
     }
 
+    /**
+     * 取得標題
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * 修改標題
+     */
     public Task setTitle(String title) {
         this.title = title;
         return this;
     }
 
+    /**
+     * 取得時間
+     */
     public String getTime() {
         return time;
     }
 
+    /**
+     * 修改時間
+     */
     public Task setTime(String time) {
         this.time = time;
         return this;
     }
 
+    /**
+     * 取得啟用與否
+     */
     public boolean isEnabled() {
         return isEnabled;
     }
 
+    /**
+     * 修改啟用與否
+     */
     public Task setEnabled(boolean enabled) {
         isEnabled = enabled;
         return this;

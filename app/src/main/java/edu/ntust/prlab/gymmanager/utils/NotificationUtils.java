@@ -11,6 +11,9 @@ import edu.ntust.prlab.gymmanager.R;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
+/**
+ * 用來處理通知事件的類別。
+ */
 public class NotificationUtils {
 
     private static final int GYM_NOTIFICATION_ID = 3004;

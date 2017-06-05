@@ -24,6 +24,10 @@ import com.firebase.jobdispatcher.JobService;
 import edu.ntust.prlab.gymmanager.R;
 import edu.ntust.prlab.gymmanager.utils.NotificationUtils;
 
+/**
+ * 主要是Firebase用來排定Job的類別，
+ * 這邊是繼承用來定義第一次提醒事件觸發的時候所做的動作。
+ */
 public class ReadyTaskFirebaseJobService extends JobService {
 
     private AsyncTask<Void, Void, Void> fetchTaskRemindTask;

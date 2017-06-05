@@ -7,6 +7,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
+/**
+ * 實際上操作資料的DBHelper
+ */
 public class TaskDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "tasks.db";
     private static final int DATABASE_VERSION = 1;

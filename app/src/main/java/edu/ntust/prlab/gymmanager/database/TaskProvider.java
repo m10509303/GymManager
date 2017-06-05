@@ -10,6 +10,9 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
+/**
+ * 讓其他應用程式存取資料庫的ContentProvider
+ */
 public class TaskProvider extends ContentProvider {
 
     private TaskDatabaseHelper mDbHelper;
