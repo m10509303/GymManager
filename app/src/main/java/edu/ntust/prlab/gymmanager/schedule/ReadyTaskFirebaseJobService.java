@@ -18,10 +18,8 @@ package edu.ntust.prlab.gymmanager.schedule;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.firebase.jobdispatcher.Job;
 import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
-import com.firebase.jobdispatcher.RetryStrategy;
 
 import edu.ntust.prlab.gymmanager.R;
 import edu.ntust.prlab.gymmanager.utils.NotificationUtils;
