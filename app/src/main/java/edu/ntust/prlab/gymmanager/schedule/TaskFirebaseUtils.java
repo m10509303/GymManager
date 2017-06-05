@@ -19,7 +19,7 @@ import edu.ntust.prlab.gymmanager.R;
 
 /**
  * 用來發送第一次的鬧鐘訊息以及之後每天的鬧鐘訊息，
- * 之所以分成READY和沒有READY是因為Firebase的時間排程必須要固定才行，
+ * 之所以分成READY和沒有READY是因為Firebase排程的時間週期必須要固定才行，
  * 因為第一次要響的時間跟之後可能不相同，所以分成兩種。
  */
 public class TaskFirebaseUtils {
