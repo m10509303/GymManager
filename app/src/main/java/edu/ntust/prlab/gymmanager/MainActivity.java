@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements
         final EditText titleEditText = (EditText) contentView.findViewById(R.id.alert_input_title);
         final TimePicker timePicker = (TimePicker) contentView.findViewById(R.id.alert_time_picker);
         builder.setPositiveButton(R.string.message_sure, new DialogInterface.OnClickListener() {
-            // 如果使用者確認加入Task，就透過ContentProvider存入資料庫，然後設定鬧鐘~
+            // 如果使用者確認加入Task，就透過ContentProvider存入資料庫，然後設定提醒~
             public void onClick(DialogInterface dialog, int whichButton) {
                 ContentValues values = new ContentValues();
                 values.put(TaskContract.TaskEntry.TITLE, String.valueOf(titleEditText.getText()));
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * 設定鬧鐘
+     * 設定提醒
      * @param id Task的編號
      * @param hour 觸發的小時
      * @param minute 觸發的分鐘
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * 取消鬧鐘
+     * 取消提醒
      * @param id Task的編號
      */
     private void cancelAlarm(int id) {
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * 當使用者選擇啟用與否時，根據狀況去開啟/關閉鬧鐘
+     * 當使用者選擇啟用與否時，根據狀況去開啟/關閉提醒
      */
     @Override
     public void onItemClicked(Task task) {
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * 當使用者滑動刪除Task，就把鬧鐘取消，並且重新讀取資料庫的Task
+     * 當使用者滑動刪除Task，就把提醒取消，並且重新讀取資料庫的Task
      */
     @Override
     public void onDrag(Task task) {

@@ -31,8 +31,8 @@ public class ReadyTaskFirebaseJobService extends JobService {
     private AsyncTask<Void, Void, Void> fetchTaskRemindTask;
 
     /**
-     * 當第一次的鬧鐘事件要觸發的時候，就會發出通知告訴使用者。
-     * 然後透過TaskFirebaseUtils去排定每天的鬧鐘事件。
+     * 當第一次的提醒事件要觸發的時候，就會發出通知告訴使用者。
+     * 然後透過TaskFirebaseUtils去排定每天的提醒事件。
      */
     @Override
     public boolean onStartJob(final JobParameters jobParameters) {
@@ -61,7 +61,7 @@ public class ReadyTaskFirebaseJobService extends JobService {
     }
 
     /**
-     * 取消第一次的鬧鐘事件
+     * 取消第一次的提醒事件
      */
     @Override
     public boolean onStopJob(JobParameters jobParameters) {

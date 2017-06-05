@@ -18,9 +18,9 @@ import java.util.concurrent.TimeUnit;
 import edu.ntust.prlab.gymmanager.R;
 
 /**
- * 用來發送第一次的鬧鐘訊息以及之後每天的鬧鐘訊息，
+ * 用來發送第一次的提醒訊息以及之後每天的提醒訊息，
  * 之所以分成READY和沒有READY是因為Firebase排程的時間週期必須要固定才行，
- * 因為第一次要響的時間跟之後可能不相同，所以分成兩種。
+ * 因為第一次提醒跟每天提醒的時間週期可能不相同，所以分成兩種。
  */
 public class TaskFirebaseUtils {
 
@@ -43,7 +43,7 @@ public class TaskFirebaseUtils {
     private static final String GYM_SYNC_TAG = "gym-sync";
 
     /**
-     * 設定第一次要提醒的鬧鐘事件
+     * 設定第一次要提醒的事件
      */
     public static void scheduleReadyFirebaseJobDispatcherSync(@NonNull final Context context,
                                                               int taskId,
@@ -85,7 +85,7 @@ public class TaskFirebaseUtils {
     }
 
     /**
-     * 取消第一次要提醒的鬧鐘事件。
+     * 取消第一次要提醒的事件。
      */
     public static void cancelScheduleReadyFirebaseJobDispatcherSync(@NonNull final Context context, int taskId) {
         Driver driver = new GooglePlayDriver(context);
@@ -94,7 +94,7 @@ public class TaskFirebaseUtils {
     }
 
     /**
-     * 設定每天要提醒的鬧鐘事件。
+     * 設定每天要提醒的事件。
      */
     public static void scheduleFirebaseJobDispatcherSync(@NonNull final Context context, int taskId) {
         Driver driver = new GooglePlayDriver(context);
@@ -118,7 +118,7 @@ public class TaskFirebaseUtils {
     }
 
     /**
-     * 取消每天要提醒的鬧鐘事件。
+     * 取消每天要提醒的事件。
      */
     public static void cancelScheduleFirebaseJobDispatcherSync(@NonNull final Context context, int taskId) {
         Driver driver = new GooglePlayDriver(context);
