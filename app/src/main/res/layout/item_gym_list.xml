@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_margin"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+    android:background="@drawable/item_normal"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/list_gym_enabled"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/list_gym_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_height"
+        android:layout_toStartOf="@id/list_gym_enabled"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:textSize="@dimen/list_text_size"
+        tools:text="9:00" />
+
+    <TextView
+        android:id="@+id/list_gym_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_toStartOf="@id/list_gym_time"
+        android:gravity="center"
+        android:textSize="@dimen/list_text_size"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        tools:text="Swimming" />
+
+
+</RelativeLayout>
